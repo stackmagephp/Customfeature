@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="StackMagePHP\Customfeature\Api\CustomfeatureRepositoryInterface" type="StackMagePHP\Customfeature\Model\CustomfeatureRepository"/>
+	<preference for="StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface" type="StackMagePHP\Customfeature\Model\Customfeature"/>
+	<preference for="StackMagePHP\Customfeature\Api\Data\CustomfeatureSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+</config>

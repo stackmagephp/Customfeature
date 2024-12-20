@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="stackmagephp_customfeature" resource="default" engine="innodb" comment="stackmagephp_customfeature Table">
+		<column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="id"/>
+		</constraint>
+		<column name="title" nullable="true" xsi:type="varchar" comment="title" length="255"/>
+		<column name="content" nullable="true" xsi:type="text" comment="content"/>
+		<column name="created_at" nullable="true" xsi:type="timestamp" comment="created_at"/>
+	</table>
+</schema>
