@@ -9,10 +9,10 @@
 	</argument>
 	<settings>
 		<buttons>
-			<button name="back" class="StackMagePHP\WTLM\Block\Adminhtml\Customfeature\Edit\BackButton"/>
-			<button name="delete" class="StackMagePHP\WTLM\Block\Adminhtml\Customfeature\Edit\DeleteButton"/>
-			<button name="save" class="StackMagePHP\WTLM\Block\Adminhtml\Customfeature\Edit\SaveButton"/>
-			<button name="save_and_continue" class="StackMagePHP\WTLM\Block\Adminhtml\Customfeature\Edit\SaveAndContinueButton"/>
+			<button name="back" class="StackMagePHP\CustomFeature\Block\Adminhtml\Customfeature\Edit\BackButton"/>
+			<button name="delete" class="StackMagePHP\CustomFeature\Block\Adminhtml\Customfeature\Edit\DeleteButton"/>
+			<button name="save" class="StackMagePHP\CustomFeature\Block\Adminhtml\Customfeature\Edit\SaveButton"/>
+			<button name="save_and_continue" class="StackMagePHP\CustomFeature\Block\Adminhtml\Customfeature\Edit\SaveAndContinueButton"/>
 		</buttons>
 		<namespacestackmagephp_customfeature_form</namespace>
 		<dataScope>data</dataScope>
@@ -29,7 +29,7 @@
 		<settings>
 			<submitUrl path="*/*/save"/>
 		</settings>
-		<dataProvider name="customfeature_form_data_source" class="StackMagePHP\WTLM\Model\Customfeature\DataProvider">
+		<dataProvider name="customfeature_form_data_source" class="StackMagePHP\CustomFeature\Model\Customfeature\DataProvider">
 			<settings>
 				<requestFieldName>customfeature_id</requestFieldName>
 				<primaryFieldName>customfeature_id</primaryFieldName>

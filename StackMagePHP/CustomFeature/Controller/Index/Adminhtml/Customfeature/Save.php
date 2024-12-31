@@ -1,11 +1,8 @@
 <?php
-/**
- * Copyright ©  All rights reserved.
- * See COPYING.txt for license details.
- */
+
 declare(strict_types=1);
 
-namespace StackMagePHP\WTLM\Controller\Adminhtml\Customfeature;
+namespace StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature;
 
 use Magento\Framework\Exception\LocalizedException;
 
@@ -39,7 +36,7 @@ class Save extends \Magento\Backend\App\Action
         if ($data) {
             $id = $this->getRequest()->getParam('customfeature_id');
         
-            $model = $this->_objectManager->create(\StackMagePHP\WTLM\Model\Customfeature::class)->load($id);
+            $model = $this->_objectManager->create(\StackMagePHP\CustomFeature\Model\Customfeature::class)->load($id);
             if (!$model->getId() && $id) {
                 $this->messageManager->addErrorMessage(__('This Customfeature no longer exists.'));
                 return $resultRedirect->setPath('*/*/');

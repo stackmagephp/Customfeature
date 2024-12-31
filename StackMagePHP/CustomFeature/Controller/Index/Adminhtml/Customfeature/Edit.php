@@ -1,13 +1,10 @@
 <?php
-/**
- * Copyright ©  All rights reserved.
- * See COPYING.txt for license details.
- */
+
 declare(strict_types=1);
 
-namespace StackMagePHP\WTLM\Controller\Adminhtml\Customfeature;
+namespace StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature;
 
-class Edit extends \StackMagePHP\WTLM\Controller\Adminhtml\Customfeature
+class Edit extends \StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature
 {
 
     protected $resultPageFactory;
@@ -35,7 +32,7 @@ class Edit extends \StackMagePHP\WTLM\Controller\Adminhtml\Customfeature
     {
         // 1. Get ID and create model
         $id = $this->getRequest()->getParam('customfeature_id');
-        $model = $this->_objectManager->create(\StackMagePHP\WTLM\Model\Customfeature::class);
+        $model = $this->_objectManager->create(\StackMagePHP\CustomFeature\Model\Customfeature::class);
         
         // 2. Initial checking
         if ($id) {

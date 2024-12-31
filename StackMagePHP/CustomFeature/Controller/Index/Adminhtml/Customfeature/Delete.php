@@ -1,13 +1,9 @@
 <?php
-/**
- * Copyright ©  All rights reserved.
- * See COPYING.txt for license details.
- */
 declare(strict_types=1);
 
-namespace StackMagePHP\WTLM\Controller\Adminhtml\Customfeature;
+namespace StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature;
 
-class Delete extends \StackMagePHP\WTLM\Controller\Adminhtml\Customfeature
+class Delete extends \StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature
 {
 
     /**
@@ -24,7 +20,7 @@ class Delete extends \StackMagePHP\WTLM\Controller\Adminhtml\Customfeature
         if ($id) {
             try {
                 // init model and delete
-                $model = $this->_objectManager->create(\StackMagePHP\WTLM\Model\Customfeature::class);
+                $model = $this->_objectManager->create(\StackMagePHP\CustomFeature\Model\Customfeature::class);
                 $model->load($id);
                 $model->delete();
                 // display success message

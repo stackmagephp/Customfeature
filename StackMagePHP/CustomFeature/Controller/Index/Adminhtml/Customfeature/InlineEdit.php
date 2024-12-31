@@ -1,11 +1,8 @@
 <?php
-/**
- * Copyright ©  All rights reserved.
- * See COPYING.txt for license details.
- */
+
 declare(strict_types=1);
 
-namespace StackMagePHP\WTLM\Controller\Adminhtml\Customfeature;
+namespace StackMagePHP\CustomFeature\Controller\Adminhtml\Customfeature;
 
 class InlineEdit extends \Magento\Backend\App\Action
 {
@@ -43,8 +40,8 @@ class InlineEdit extends \Magento\Backend\App\Action
                 $error = true;
             } else {
                 foreach (array_keys($postItems) as $modelid) {
-                    /** @var \StackMagePHP\WTLM\Model\Customfeature $model */
-                    $model = $this->_objectManager->create(\StackMagePHP\WTLM\Model\Customfeature::class)->load($modelid);
+                    /** @var \StackMagePHP\CustomFeature\Model\Customfeature $model */
+                    $model = $this->_objectManager->create(\StackMagePHP\CustomFeature\Model\Customfeature::class)->load($modelid);
                     try {
                         $model->setData(array_merge($model->getData(), $postItems[$modelid]));
                         $model->save();
