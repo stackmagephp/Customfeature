@@ -3,4 +3,17 @@
 	<preference for="StackMagePHP\Customfeature\Api\CustomfeatureRepositoryInterface" type="StackMagePHP\Customfeature\Model\CustomfeatureRepository"/>
 	<preference for="StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface" type="StackMagePHP\Customfeature\Model\Customfeature"/>
 	<preference for="StackMagePHP\Customfeature\Api\Data\CustomfeatureSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<virtualType name="StackMagePHP\Customfeature\Model\ResourceModel\Customfeature\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">stackmagephp_customfeature</argument>
+			<argument name="resourceModel" xsi:type="string">StackMagePHP\Customfeature\Model\ResourceModel\Customfeature\Collection</argument>
+		</arguments>
+	</virtualType>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="stackmagephp_customfeature_listing_data_source" xsi:type="string">StackMagePHP\Customfeature\Model\ResourceModel\Customfeature\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
 </config>

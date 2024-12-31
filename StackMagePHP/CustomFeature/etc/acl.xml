@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="StackMagePHP_CustomFeature::Customfeature" title="Customfeature" sortOrder="10">
+					<resource id="StackMagePHP_CustomFeature::Customfeature_save" title="Save Customfeature" sortOrder="10"/>
+					<resource id="StackMagePHP_CustomFeature::Customfeature_delete" title="Delete Customfeature" sortOrder="20"/>
+					<resource id="StackMagePHP_CustomFeature::Customfeature_update" title="Update Customfeature" sortOrder="30"/>
+					<resource id="StackMagePHP_CustomFeature::Customfeature_view" title="View Customfeature" sortOrder="40"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>
