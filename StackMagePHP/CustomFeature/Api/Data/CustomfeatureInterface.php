@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Api\Data;
+namespace StackMagePHP\CustomFeature\Api\Data;
 
 interface CustomfeatureInterface
 {
@@ -21,7 +21,7 @@ interface CustomfeatureInterface
     /**
      * Set customfeature_id
      * @param string $customfeatureId
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      */
     public function setCustomfeatureId($customfeatureId);
 
@@ -34,7 +34,7 @@ interface CustomfeatureInterface
     /**
      * Set title
      * @param string $title
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      */
     public function setTitle($title);
 
@@ -47,7 +47,7 @@ interface CustomfeatureInterface
     /**
      * Set content
      * @param string $content
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      */
     public function setContent($content);
 
@@ -60,7 +60,7 @@ interface CustomfeatureInterface
     /**
      * Set created_at
      * @param string $createdAt
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      */
     public function setCreatedAt($createdAt);
 }

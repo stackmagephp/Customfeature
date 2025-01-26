@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Controller\Index;
+namespace StackMagePHP\CustomFeature\Controller\Index;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\PageFactory;
-use StackMagePHP\Customfeature\Api\CustomfeatureRepositoryInterface as Customfeature;
+use StackMagePHP\CustomFeature\Api\CustomfeatureRepositoryInterface as Customfeature;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 
 class Index implements HttpGetActionInterface

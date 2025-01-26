@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Model;
+namespace StackMagePHP\CustomFeature\Model;
 
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
-use StackMagePHP\Customfeature\Api\CustomfeatureRepositoryInterface;
-use StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface;
-use StackMagePHP\Customfeature\Api\Data\CustomfeatureInterfaceFactory;
-use StackMagePHP\Customfeature\Api\Data\CustomfeatureSearchResultsInterfaceFactory;
-use StackMagePHP\Customfeature\Model\ResourceModel\Customfeature as ResourceCustomfeature;
-use StackMagePHP\Customfeature\Model\ResourceModel\Customfeature\CollectionFactory as CustomfeatureCollectionFactory;
+use StackMagePHP\CustomFeature\Api\CustomfeatureRepositoryInterface;
+use StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface;
+use StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterfaceFactory;
+use StackMagePHP\CustomFeature\Api\Data\CustomfeatureSearchResultsInterfaceFactory;
+use StackMagePHP\CustomFeature\Model\ResourceModel\Customfeature as ResourceCustomfeature;
+use StackMagePHP\CustomFeature\Model\ResourceModel\Customfeature\CollectionFactory as CustomfeatureCollectionFactory;
 
 class CustomfeatureRepository implements CustomfeatureRepositoryInterface
 {

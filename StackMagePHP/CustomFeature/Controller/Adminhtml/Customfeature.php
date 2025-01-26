@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Controller\Adminhtml;
+namespace StackMagePHP\CustomFeature\Controller\Adminhtml;
 
 abstract class Customfeature extends \Magento\Backend\App\Action
 {

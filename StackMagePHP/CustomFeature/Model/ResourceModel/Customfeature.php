@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Model\ResourceModel;
+namespace StackMagePHP\CustomFeature\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 

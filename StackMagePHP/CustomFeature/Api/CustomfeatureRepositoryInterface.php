@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Api;
+namespace StackMagePHP\CustomFeature\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 
@@ -11,18 +11,18 @@ interface CustomfeatureRepositoryInterface
 
     /**
      * Save Customfeature
-     * @param \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface $customfeature
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @param \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface $customfeature
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function save(
-        \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface $customfeature
+        \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface $customfeature
     );
 
     /**
      * Retrieve Customfeature
      * @param string $customfeatureId
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function get($customfeatureId);
@@ -30,7 +30,7 @@ interface CustomfeatureRepositoryInterface
     /**
      * Retrieve Customfeature matching the specified criteria.
      * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
-     * @return \StackMagePHP\Customfeature\Api\Data\CustomfeatureSearchResultsInterface
+     * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureSearchResultsInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getList(
@@ -39,12 +39,12 @@ interface CustomfeatureRepositoryInterface
 
     /**
      * Delete Customfeature
-     * @param \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface $customfeature
+     * @param \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface $customfeature
      * @return bool true on success
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function delete(
-        \StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface $customfeature
+        \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface $customfeature
     );
 
     /**

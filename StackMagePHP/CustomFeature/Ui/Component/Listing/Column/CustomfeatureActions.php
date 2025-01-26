@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Ui\Component\Listing\Column;
+namespace StackMagePHP\CustomFeature\Ui\Component\Listing\Column;
 
 class CustomfeatureActions extends \Magento\Ui\Component\Listing\Columns\Column
 {

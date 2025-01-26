@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace StackMagePHP\Customfeature\Model;
+namespace StackMagePHP\CustomFeature\Model;
 
 use Magento\Framework\Model\AbstractModel;
-use StackMagePHP\Customfeature\Api\Data\CustomfeatureInterface;
+use StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface;
 
 class Customfeature extends AbstractModel implements CustomfeatureInterface
 {
@@ -15,7 +15,7 @@ class Customfeature extends AbstractModel implements CustomfeatureInterface
      */
     public function _construct()
     {
-        $this->_init(\StackMagePHP\Customfeature\Model\ResourceModel\Customfeature::class);
+        $this->_init(\StackMagePHP\CustomFeature\Model\ResourceModel\Customfeature::class);
     }
 
     /**
