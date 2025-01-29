@@ -40,13 +40,13 @@ class CustomfeatureActions extends \Magento\Ui\Component\Listing\Columns\Column
     {
         if (isset($dataSource['data']['items'])) {
             foreach ($dataSource['data']['items'] as & $item) {
-                if (isset($item['customfeature_id'])) {
+                if (isset($item['id'])) {
                     $item[$this->getData('name')] = [
                         'edit' => [
                             'href' => $this->urlBuilder->getUrl(
                                 static::URL_PATH_EDIT,
                                 [
-                                    'customfeature_id' => $item['customfeature_id']
+                                    'id' => $item['id']
                                 ]
                             ),
                             'label' => __('Edit')
@@ -55,7 +55,7 @@ class CustomfeatureActions extends \Magento\Ui\Component\Listing\Columns\Column
                             'href' => $this->urlBuilder->getUrl(
                                 static::URL_PATH_DELETE,
                                 [
-                                    'customfeature_id' => $item['customfeature_id']
+                                    'id' => $item['id']
                                 ]
                             ),
                             'label' => __('Delete'),

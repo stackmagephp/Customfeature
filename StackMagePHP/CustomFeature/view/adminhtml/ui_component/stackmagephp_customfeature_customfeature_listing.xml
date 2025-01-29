@@ -79,9 +79,34 @@
 		<column name="title">
 			<settings>
 				<filter>text</filter>
-				<label translate="true">title</label>
+				<label translate="true">Title</label>
 				<editor>
 					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		
+		<column name="content">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Content</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		<column name="created_at">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Created At</label>
+				<editor>
+					<editorType>date</editorType>
 					<validation>
 						<rule name="required-entry" xsi:type="boolean">false</rule>
 					</validation>
@@ -95,29 +120,5 @@
 				<resizeDefaultWidth>107</resizeDefaultWidth>
 			</settings>
 		</actionsColumn>
-		<column name="content">
-			<settings>
-				<filter>text</filter>
-				<label translate="true">content</label>
-				<editor>
-					<editorType>text</editorType>
-					<validation>
-						<rule name="required-entry" xsi:type="boolean">false</rule>
-					</validation>
-				</editor>
-			</settings>
-		</column>
-		<column name="created_at">
-			<settings>
-				<filter>text</filter>
-				<label translate="true">created_at</label>
-				<editor>
-					<editorType>date</editorType>
-					<validation>
-						<rule name="required-entry" xsi:type="boolean">false</rule>
-					</validation>
-				</editor>
-			</settings>
-		</column>
 	</columns>
 </listing>

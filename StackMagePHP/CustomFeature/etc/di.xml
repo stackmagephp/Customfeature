@@ -15,5 +15,6 @@
 				<item name="stackmagephp_customfeature_listing_data_source" xsi:type="string">StackMagePHP\CustomFeature\Model\ResourceModel\Customfeature\Grid\Collection</item>
 			</argument>
 		</arguments>
+		
 	</type>
 </config>

@@ -13,13 +13,13 @@ interface CustomfeatureInterface
     const CREATED_AT = 'created_at';
 
     /**
-     * Get customfeature_id
+     * Get id
      * @return string|null
      */
     public function getCustomfeatureId();
 
     /**
-     * Set customfeature_id
+     * Set id
      * @param string $customfeatureId
      * @return \StackMagePHP\CustomFeature\Api\Data\CustomfeatureInterface
      */
