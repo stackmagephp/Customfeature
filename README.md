@@ -34,3 +34,6 @@ php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento cache:flush
 
+📝 Contributing
+If you find this module helpful and want to contribute, feel free to fork the repository and submit a pull request.
+
